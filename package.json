@@ -1,0 +1,40 @@
+{
+    "name": "@wartab/vat-number-validator",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "main": "dist/index.cjs",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "engines": {
+        "node": ">=16"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.mjs && esbuild src/index.ts --bundle --platform=node --format=cjs --outfile=dist/index.cjs && tsc --emitDeclarationOnly --declaration --outDir dist",
+        "test": "vitest run"
+    },
+    "keywords": [
+        "vat",
+        "vat number",
+        "typescript",
+        "vat validator"
+    ],
+    "author": "wartab",
+    "license": "MIT",
+    "devDependencies": {
+        "esbuild": "0.25.2",
+        "typescript": "5.8.3"
+    }
+}
