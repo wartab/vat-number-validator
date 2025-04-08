@@ -1,5 +1,9 @@
 {
     "name": "@wartab/vat-number-validator",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wartab/vat-number-validator"
+    },
     "version": "1.0.0",
     "description": "",
     "type": "module",
