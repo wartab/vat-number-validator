@@ -10,18 +10,6 @@
     "main": "dist/index.cjs",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
-    "exports": {
-        ".": {
-            "import": {
-                "file": "./dist/index.mjs",
-                "types": "./dist/index.d.ts"
-            },
-            "require": {
-                "file": "./dist/index.cjs",
-                "types": "./dist/index.d.ts"
-            }
-        }
-    },
     "files": [
         "dist"
     ],
