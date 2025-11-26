@@ -155,7 +155,7 @@ function checkChVatNumber(vatNumber: string): boolean {
 }
 
 function checkCyVatNumber(vatNumber: string): boolean {
-    if (!vatNumber.match(/^CY[0-59]\d{7}[A-Z]/)) {
+    if (!vatNumber.match(/^CY\d{8}[A-Z]/)) {
         return false;
     }
 
