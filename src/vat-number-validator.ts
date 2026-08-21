@@ -539,7 +539,7 @@ function checkElVatNumber(vatNumber: string) {
 }
 
 function checkEsVatNumber(vatNumber: string): boolean {
-    if (!vatNumber.startsWith("ES")) {
+    if (!vatNumber.match(/^ES/i)) {
         return false;
     }
 
